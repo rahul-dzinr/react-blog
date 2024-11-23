@@ -1,10 +1,10 @@
 import AllRoutes from "./routes/AllRoutes";
-
+import { ThemeProvider } from "./context/ThemeContext";
 
 export default function App() {
   return (
-    <>
-    <AllRoutes />
-        </>
+    <ThemeProvider>
+      <AllRoutes />
+    </ThemeProvider>
   )
 }
